@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="prism.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <title>Om Html</title>
+    <info>
+      <h1>Html</h1>
+    </info>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arbeidsuke.html">Arbeidsuke 2022</a></li>
+        <li><a href="html.html">Html</a></li>
+        <li><a href="Css.html">Css</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+      </ul>
+    </nav>
+    <img src="bilder/coding.jpg" alt="Html" width="600" height="400" />
+    <hr />
+    <h2>Hva er HTML?</h2>
+    <h3>Definisjon, funksjonalitet</h3>
+    <p class="beskrivelse">
+      HTML er et markeringsspråk for å utvikle nettsider. Du kan se får deg HTML
+      som skallet på bilen.
+      <br />
+      I dag er det i praksis en suveren standard for innholdet i nettsider, og
+      HTML støttes av alle vanlige nettlesere.HTML er en tekstbasert tilnærming
+      for å beskrive hvordan innholdet er strukturert på en nettside. I henhold
+      til kodene i HTML-filen, viser nettleseren teksten, innholdet, tabellene,
+      lister og andre elementer.
+    </p>
+
+    <div class="card">
+      <h3>Eksempel</h3>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-markup"> &lt;p&gt;Nå sier jeg til nettleseren at dette er en paragraf&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-markup"> &lt;b&gt;Nå sier jeg til nettleseren at dette er fet skrift&lt;/b&gt;</code></pre>
+        </div>
+      </div>
+      <br />
+      <p id="htmlEksempel">Dette er en paragraf!</p>
+      <button
+        class="card-button"
+        type="button"
+        onclick='document.getElementById("htmlEksempel").innerHTML="<b>Nå sier jeg til nettleseren at dette er fet skrift</b>"'
+      >
+        Endre skrift
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>Eksempel</h3>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-markup"> &lt;h1&gt;Nå sier jeg til nettleseren at dette er første overskrift&lt;/h1&gt;</code></pre>
+        </div>
+      </div>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-markup"> &lt;h2&gt;Nå sier jeg til nettleseren at dette er den andre overskriften&lt;/h2&gt;</code></pre>
+        </div>
+      </div>
+      <br />
+      <span id="overskriftEksempel"><h1>Dette er første overskrift!</h1></span>
+      <button
+        class="card-button"
+        type="button"
+        onclick='document.getElementById("overskriftEksempel").innerHTML="<h2>Dette er andre overskrift</h2>"'
+      >
+        Endre overskrift
+      </button>
+    </div>
+    <footer>
+      <p>Malin Arbeidsuke, 2022</p>
+    </footer>
+  </body>
+</html>

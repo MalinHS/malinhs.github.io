@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="prism.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <title>Om Css</title>
+    <info>
+      <h1>Css</h1>
+    </info>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="arbeidsuke.html">Arbeidsuke 2022</a></li>
+        <li><a href="html.html">Html</a></li>
+        <li><a href="Css.html">Css</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+      </ul>
+    </nav>
+    <img src="bilder/minecraft.gif" alt="Html" width="600" height="400" />
+    <hr />
+    <h2>Hva er Css?</h2>
+    <h3>Definisjon, funksjonalitet</h3>
+    <p class="beskrivelse">
+      <span>du kan si at Css er designet på bilen.</span>
+      <br />
+      CSS er et stylingspråk som brukes til å gjøre nettsidene mer
+      presentable.CSS er et stylingspråk som brukes til å beskrive utseendet og
+      formateringen av et dokument.HTML, CSS og JavaScript betraktes som de
+      viktigste tre grunnleggende språkene for webutvikling. Med CSS kan man
+      lage animasjoner, som minecraft-animasjonen på bildet.
+      <br />CSS-stilsett består ganske enkelt av en liste med stilregler. En
+      stilregel har to deler: selektoren som forteller hvor den gjelder og
+      deklarasjons-listen som forteller hvordan formateringen skal være.
+    </p>
+
+    <div class="card">
+      <h3>Eksempel</h3>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-css"> &lt;p style="color:red"&gt;Nå har jeg stylet teksten med rød farge&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-css"> &lt;p style="color:pink"&gt;Nå har jeg stylet teksten med rosa farge&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <br />
+      <p id="fargeEksempel" style="color: red">
+        Denne setningen kan skifte farge!
+      </p>
+      <button
+        class="card-button"
+        type="button"
+        onclick='document.getElementById("fargeEksempel").style.color = "pink"'
+      >
+        Endre farge
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>Eksempel</h3>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-css"> &lt;p style="text-align: left"&gt;Nå plasserer jeg teksten til venstre&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <div class="code-example">
+        <div class="code-example_text">
+          <pre><code class="language-css"> &lt;p style="text-align: center"&gt;Nå sentrerer jeg teksten&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+      <br />
+      <p id="venstreTekst">Denne teksten er flyttbar!</p>
+      <button
+        class="card-button"
+        type="button"
+        onclick='document.getElementById("venstreTekst").style.textAlign = "left"'
+      >
+        Flytt på teksten!
+      </button>
+    </div>
+    <footer>
+      <p>Malin Arbeidsuke, 2022</p>
+    </footer>
+  </body>
+</html>

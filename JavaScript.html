@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <title>Om JavaScript</title>
+    <info>
+        <h1>JavaScript</h1>
+    </info>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="arbeidsuke.html">Arbeidsuke 2022</a></li>
+            <li><a href="html.html">Html</a></li>
+            <li><a href="Css.html">Css</a></li>
+            <li><a href="JavaScript.html">JavaScript</a></li>
+
+        </ul>
+
+    </nav>
+    <img src="bilder/coding.jpg" alt="Html" width="600" height="400" />
+    <hr />
+    <h2>Hva er JavaScript?</h2>
+    <p class="beskrivelse">
+        du kan si at JavaScript er motoren på bilen.
+        <br />
+        Det er et annet språk som kalles JavaScript som er et skriptspråk på klientsiden. Det brukes til å gjøre
+        nettsiden dynamisk.
+        <br />
+        Det er faktisk svært få nettsider som ikke bruker det. Når du bruker for eksempel Facebook, bruker du
+        JavaScript. Det er allikevel mange som ikke vet hva JavaScript er, hvorfor det er så viktig og hvordan det
+        fungerer. JavaScript gir deg uendelig med muligheter og er svært viktig for å ha en nettside som fungerer
+        optimalt.
+    </p>
+    <p>Moderne nettsider= JavaScript</p>
+    <div class="card">
+        <h3>Variabler</h3>
+        <div class="code-example">
+            <div class="code-example_text">
+                <pre><code class="language-javascript">var minAlderTall = 16;
+var minAlderTekst = "Jeg er 16";</code></pre>
+            </div>
+        </div>
+        <p id="endreText">Jeg er 16 år</p>
+        <button class="card-button" onclick="endreVariabel()">Endre innholdet i variabelen</button>
+    </div>
+
+    <div class="card">
+        <h3>If-settninger</h3>
+        <div class="code-example">
+            <div class="code-example_text">
+                <pre><code class="language-javascript">if (alder >= 18 && alder <= 99) {
+    document.getElementById("svaret").innerHTML =
+      "Du er gammel nok til å kjøre bil";
+  } else if (alder >= 16 && alder <= 17) {
+    document.getElementById("svaret").innerHTML =
+      "Du er gammel nok til å kjøre moped";
+  } else if (alder >= 99) {
+    document.getElementById("svaret").innerHTML =
+      "Du er for gammel til å kjøre bil, hold deg unna trafikken.";
+  } else {
+    document.getElementById("svaret").innerHTML = "Du er ikke gammel nok";
+  }</code></pre>
+            </div>
+        </div>
+
+        <br />
+        <p>Er du gammel nok?</p>
+        <p id="svaret"></p>
+        <button class="card-button" onclick="startPrompt()">Er du gammel nok?</button>
+    </div>
+    <br />
+
+
+    <div class="card">
+        <h3>Funksjon</h3>
+        <div class="code-example">
+            <div class="code-example_text">
+                <pre><code class="language-javascript">function endreBil() {
+  document.getElementById("bil").innerHTML = "Volvo 240";
+}
+</code></pre>
+            </div>
+        </div>
+
+        <br />
+        <p id="bil">Tesla</p>
+        <button class="card-button" onclick="endreBil()">Kjør funkjson</button>
+    </div>
+
+
+    <div class="card">
+        <h3>løkke</h3>
+        <div class="code-example">
+            <div class="code-example_text">
+                <pre><code class="language-javascript">function skrivUtListe() {
+  var favorittspill = [
+    "valorant",
+    "minecraft",
+    "valheim",
+    "phasmaphobia",
+    "sims 4",
+  ];
+
+  for (var i = 0; i < favorittspill.length; i++) {
+    document.getElementById("favorittspill").innerHTML +=
+      "<br/>" + favorittspill[i];
+  }
+  document.getElementById("favorittspillButton").disabled = true;
+}</code></pre>
+            </div>
+        </div>
+        <br />
+        <p id="favorittspill"></p>
+        <button id="favorittspillButton" class="card-button" onclick="skrivUtListe()">Skriv ut liste</button>
+    </div>
+
+
+    <footer>
+        <p>Malin Arbeidsuke, 2022</p>
+    </footer>
+</body>
+
+</html>
+
+</body>
+
+</html>
