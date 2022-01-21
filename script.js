@@ -24,7 +24,7 @@ function startPrompt() {
 }
 
 function endreBil() {
-  document.getElementById("bil").innerHTML = "Volvo 240";
+  document.getElementById("bil").innerHTML = "Volvo V70";
 }
 
 function skrivUtListe() {
